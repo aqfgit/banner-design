@@ -8,153 +8,207 @@
   <title>Document</title>
 </head>
 <body>
-  <header class="page-header">
-      <div class="top-bar">
-          <h1>Carmaster</h1>
-          <nav class="menu">
-              <ul class="menu-items">
-                <li><a href="index.html">Strona główna</a></li>
-                <li><a href="oferta.html">Oferta</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+  <header class="l-page-header">
+      <div class="c-top-bar">
+          <h1 class="c-top-bar__heading">Carmaster</h1>
+          <nav class="c-top-bar__site-nav">
+              <ul class="l-horizontal-menu">
+                <li class="l-horizontal-menu__item"><a class="l-horizontal-menu__item-link" href="index.html">Strona główna</a></li>
+                <li class="l-horizontal-menu__item"><a class="l-horizontal-menu__item-link" href="oferta.html">Oferta</a></li>
+                <li class="l-horizontal-menu__item"><a class="l-horizontal-menu__item-link" href="galeria.html">Galeria</a></li>
+                <li class="l-horizontal-menu__item"><a class="l-horizontal-menu__item-link" href="kontakt.html">Kontakt</a></li>
               </ul>
           </nav>
       </div><!-- TODO work on semantics and accesibility -->
 
-      <section class="slider">
-        <nav class="slider-nav">
-          <a href="#">Prev</a>
-          <a href="#">Next</a>
+      <section class="c-slider">
+        <nav class="l-arrows-navigation">
+          <a class="l-arrows-navigation_arrow l-arrows-navigation_arrow--prev" href="#">Prev</a>
+          <a class="l-arrows-navigation_arrow l-arrows-navigation_arrow--next" href="#">Next</a>
         </nav>
 
-        <article class="slider-slide">
-          <h2>Tytuł</h2>
-          <p>Opis tutaj</p>
-          <a href="#">Przejdź dalej</a>
-        </article>
-        <article class="slider-slide">
-          <h2>Tytuł</h2>
-          <p>Opis tutaj</p>
-          <a href="#">Przejdź dalej</a>
-        </article>
-        <article class="slider-slide">
-          <h2>Tytuł</h2>
-          <p>Opis tutaj</p>
-          <a href="#">Przejdź dalej</a>
-        </article>
+        <ul class="l-slider-list">
+
+          <li class="l-slider-list__item">
+            <article class="c-slider__slide">
+              <h2 class="c-slider__title">Tytuł</h2>
+              <p class="c-slider__details">Opis tutaj</p>
+              <a class="c-slider__link" href="#">Przejdź dalej</a>
+            </article>
+          </li>
+
+          <li class="l-slider-list__item">
+            <article class="c-slider__slide">
+              <h2 class="c-slider__title">Tytuł</h2>
+              <p class="c-slider__details">Opis tutaj</p>
+              <a class="c-slider__link" href="#">Przejdź dalej</a>
+            </article>
+          </li>
+
+          <li class="l-slider-list__item">
+            <article class="c-slider__slide">
+              <h2 class="c-slider__title">Tytuł</h2>
+              <p class="c-slider__details">Opis tutaj</p>
+              <a class="c-slider__link" href="#">Przejdź dalej</a>
+            </article>
+          </li>
+
+          <li class="l-slider-list__item">
+            <article class="c-slider__slide">
+              <h2 class="c-slider__title">Tytuł</h2>
+              <p class="c-slider__details">Opis tutaj</p>
+              <a class="c-slider__link" href="#">Przejdź dalej</a>
+            </article>
+          </li>
+        </ul>
+      
 
       </section>    
   </header>
 
-  <main>
-      <section class="about-us">
-          <h2>About us</h2>
-          <div class="text-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, at eum? Dignissimos vitae ducimus iure sed, optio fugiat a neque suscipit tempore explicabo amet harum deserunt nihil tempora numquam nulla quos quas. Reprehenderit, omnis saepe nihil accusantium id eligendi numquam vitae voluptate, mollitia rem laborum maxime libero dignissimos sapiente alias!</p>
-          </div>
-        </section>
+  <main class="l-page-wrapper">
+      <section class="section c-section-description">
+          <h2 class="section__heading">About us</h2>
+          <p class="c-section-description__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, at eum? Dignissimos vitae ducimus iure sed, optio fugiat a neque suscipit tempore explicabo amet harum deserunt nihil tempora numquam nulla quos quas. Reprehenderit, omnis saepe nihil accusantium id eligendi numquam vitae voluptate, mollitia rem laborum maxime libero dignissimos sapiente alias!</p>
+      </section>
   
-        <section class="offers">
-          <h2>Nasza oferta</h2>
-          <div class="offers-thumbnails">
-            <figure>
-              <img src="" alt="">
-              <figcaption>Oferta 1</figcaption>
+      <section class="c-section-thumbnails">
+        <h2 class="c-section-thumbnails__heading">Nasza oferta</h2>
+        <ul class="l-thumnails-wrapper">
+
+          <li class="l-thumnails-wrapper__item">
+            <figure class="c-section-thumbnails__item">
+              <img class="c-section-thumbnails__image" src="" alt="">
+              <figcaption class="c-section-thumbnails__description">Oferta 1</figcaption>
             </figure>
-  
-            <figure>
-              <img src="" alt="">
-              <figcaption>Oferta 1</figcaption>
+          </li>
+        
+
+          <li class="l-thumnails-wrapper__item">
+            <figure class="c-section-thumbnails__item">
+              <img class="c-section-thumbnails__image" src="" alt="">
+              <figcaption class="c-section-thumbnails__description">Oferta 1</figcaption>
             </figure>
+          </li>
+
+          <li class="l-thumnails-wrapper__item">
+            <figure class="c-section-thumbnails__item">
+              <img class="c-section-thumbnails__image" src="" alt="">
+              <figcaption class="c-section-thumbnails__description">Oferta 1</figcaption>
+            </figure>
+          </li>
+          
+          <li class="l-thumnails-wrapper__item">
+            <figure class="c-section-thumbnails__item">
+              <img class="c-section-thumbnails__image" src="" alt="">
+              <figcaption class="c-section-thumbnails__description">Oferta 1</figcaption>
+            </figure>
+          </li>
+
+          </ul>
+        <button class="c-button">Zobacz więcej</button>
+      </section>
   
-              <figure>
-                <img src="" alt="">
-                <figcaption>Oferta 1</figcaption>
-              </figure>
+        <section class="section c-slider c-slider--testimonials">
+          <h2 class="section__heading">Opinie klientow</h2>
   
-              <figure>
-                <img src="" alt="">
-                <figcaption>Oferta 1</figcaption>
-              </figure>
-          </div>
-          <button>Zobacz więcej</button>
-        </section>
-  
-        <section class="testimonials">
-          <h2>Opinie klientow</h2>
-  
-          <nav class="testimonials-nav">
-            <a href="#">Prev</a>
-            <a href="#">Next</a>
+          <nav class="l-arrows-navigation">
+            <a class="l-arrows-navigation_arrow l-arrows-navigation_arrow--prev" href="#">Prev</a>
+            <a class="l-arrows-navigation_arrow l-arrows-navigation_arrow--next" href="#">Next</a>
           </nav>
   
-          <div class="testimonials-container">
-            <article class="testimonial-slide">
-                <h2>Anna Kowalska</h2>
-                <p>Super :)</p>
+          <ul class="l-slider-list">
+          
+            <li class="l-slider-list__item">
+              <article class="c-slider__slide">
+                <h2 class="c-slider__title">Tytuł</h2>
+                <p class="c-slider__details">Opis tutaj</p>
               </article>
-              <article class="testimonial-slide">
-                <h2>Tytuł</h2>
-                <p>Opis tutaj</p>
+            </li>
+
+            <li class="l-slider-list__item">
+              <article class="c-slider__slide">
+                <h2 class="c-slider__title">Tytuł</h2>
+                <p class="c-slider__details">Opis tutaj</p>
               </article>
-              <article class="testimonial-slide">
-                <h2>Tytuł</h2>
-                <p>Opis tutaj</p>
+            </li>
+
+            <li class="l-slider-list__item">
+              <article class="c-slider__slide">
+                <h2 class="c-slider__title">Tytuł</h2>
+                <p class="c-slider__details">Opis tutaj</p>
               </article>
-          </div>
+            </li>
+
+            <li class="l-slider-list__item">
+            <article class="c-slider__slide">
+              <h2 class="c-slider__title">Tytuł</h2>
+              <p class="c-slider__details">Opis tutaj</p>
+            </article>
+          </li>
+
+        </ul>
         </section>
 
-        <section class="gallery-preview">
-            <figure>
-                <img src="" alt="">
-                <figcaption>Obrazek 1</figcaption>
-            </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption>Obrazek 1</figcaption>
-            </figure>
-            <figure>
-                  <img src="" alt="">
-                  <figcaption>Obrazek 1</figcaption>
-            </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption>Obrazek 1</figcaption>
-            </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption>Obrazek 1</figcaption>
-            </figure>
-            <figure>
-                  <img src="" alt="">
-                  <figcaption>Obrazek 1</figcaption>
-            </figure>
+        <section class="c-gallery-preview">
+            <ul class="l-thumnails-wrapper">
+
+              <li class="l-thumnails-wrapper__item">
+                <figure class="c-gallery-preview__item">
+                  <img class="c-gallery-preview__image" src="" alt="">
+                  <figcaption class="c-gallery-preview__description">Oferta 1</figcaption>
+                </figure>
+              </li>
+            
+    
+              <li class="l-thumnails-wrapper__item">
+                <figure class="c-gallery-preview__item">
+                  <img class="c-gallery-preview__image" src="" alt="">
+                  <figcaption class="c-gallery-preview__description">Oferta 1</figcaption>
+                </figure>
+              </li>
+    
+              <li class="l-thumnails-wrapper__item">
+                <figure class="c-gallery-preview__item">
+                  <img class="c-gallery-preview__image" src="" alt="">
+                  <figcaption class="c-gallery-preview__description">Oferta 1</figcaption>
+                </figure>
+              </li>
+              
+              <li class="l-thumnails-wrapper__item">
+                <figure class="c-gallery-preview__item">
+                  <img class="c-gallery-preview__image" src="" alt="">
+                  <figcaption class="c-gallery-preview__description">Oferta 1</figcaption>
+                </figure>
+              </li>
+      
+            </ul>
         </section>
 
-        <section class="contact">
-          <h2>Kontakt</h2>
-          <ul>
-            <li>
-              <span class="icon"></span>
-              <p>Dane kontaktowe</p>
+        <section class="section c-contact">
+          <h2 class="sectio__heading">Kontakt</h2>
+          <ul class="l-contact-list">
+            <li class="l-contact-list__item">
+              <span class="c-contact__icon"></span>
+              <p class="c-contact__details">Dane kontaktowe</p>
             </li>
-            <li>
-              <span class="icon"></span>
-              <p>Dane kontaktowe</p>
+            <li class="l-contact-list__item">
+              <span class="c-contact__icon"></span>
+              <p class="c-contact__details">Dane kontaktowe</p>
             </li>
-            <li>
-              <span class="icon"></span>
-              <p>Dane kontaktowe</p>
+            <li class="l-contact-list__item">
+              <span class="c-contact__icon"></span>
+              <p class="c-contact__details">Dane kontaktowe</p>
             </li>
-            <li>
-              <span class="icon"></span>
-              <p>Dane kontaktowe</p>
+            <li class="l-contact-list__item">
+              <span class="c-contact__icon"></span>
+              <p class="c-contact__details">Dane kontaktowe</p>
             </li>
           </ul>
         </section>
   </main>
   <footer class="page-footer">
-    &copy; Bartosz Daniszewski. All rights reserved.
+    <p class="page-footer__description">&copy; Bartosz Daniszewski. All rights reserved.</p>
   </footer>
   
 
