@@ -10,12 +10,20 @@ html, body {
   align-content: center;
   background-color: #ffffff;
   padding: 20px;
+  box-shadow: 10px 1px 1px rgb(194, 191, 191);
+}
+
+.c-top-bar__logo {
+  font-family: 'Chivo', sans-serif;
+  order: 0;
+  margin: 0 70px 0 50px;
+  font-size: 2rem;
 }
 
 .l-horizontal-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: -3px 0 0 0;
   display: flex;
   justify-content: space-around;
 }
@@ -40,16 +48,52 @@ html, body {
   margin-top: 10px;
 }
 
-.c-top-bar__heading {
-  order: 0;
-  margin: 0 70px 0 50px;
-  font-size: 2rem;
-}
-
 .c-top-bar__socials {
   order: 2;
+  margin-top: 10px;
+}
+
+.c-top-bar__social-icon {
+  width: 25px;
+  height: 25px;
 }
 
 .l-flex-container {
   display: flex;
 }
+
+.c-banner__heading {
+  margin: 0;
+}
+
+.c-banner {
+  background-image: url("./img/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-banner__box {
+  text-align: center;
+  background: rgba(51, 50, 50, 0.486);
+  color: #ffffff;
+  padding: 20px;
+}
+
+.c-banner__heading {
+  font-size: 3rem;
+}
+
+.c-banner-details {
+  font-size: 1.7rem;
+}
+
+
