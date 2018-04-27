@@ -36,9 +36,13 @@ html, body {
   color: rgb(153, 139, 139);
 }
 
+.c-top-bar__site-nav {
+  margin-top: 10px;
+}
+
 .c-top-bar__heading {
-  order: 1;
-  margin: -5px;
+  order: 0;
+  margin: 0 70px 0 50px;
   font-size: 2rem;
 }
 
@@ -46,3 +50,6 @@ html, body {
   order: 2;
 }
 
+.l-flex-container {
+  display: flex;
+}
