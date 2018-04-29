@@ -13,7 +13,7 @@
   <header class="l-page-header">
       <div class="c-top-bar">
         <div class="l-flex-container">
-            <h1 class="c-top-bar__logo">Carmaster</h1>
+            <h1 class="c-top-bar__logo"><a class="c-top-bar__logo-link" href="index.html">Carmaster</a></h1>
             <nav class="c-top-bar__site-nav">
                 <ul class="l-horizontal-list">
                   <li class="l-horizontal-list__item"><a class="l-horizontal-list__link" href="index.html">Strona główna</a></li>
@@ -50,8 +50,8 @@
       </section> -->
   
       <section class="section c-offers">
-        <div class="l-heading-box">
-            <h2 class="c-offers__heading">Nasza oferta</h2>
+        <div class="c-section-heading">
+          <h2 class="c-section-heading__text">Nasza oferta</h2>
         </div>
         
         <ul class="l-thumnails-wrapper">
@@ -110,7 +110,7 @@
           <li class="l-thumnails-wrapper__item">
             <figure class="c-offers__item">
               <img class="c-offers__image" src="./img/wheel.jpg" alt="">
-              <figcaption class="c-offers__description">Wymiana opon</figcaption>
+              <figcaption class="c-offers__description">Serwis opon</figcaption>
             </figure>
             <div class="l-button-wrapper">
               <a src="#" class="c-offers__button">Więcej</a>
@@ -119,35 +119,6 @@
 
           </ul>
       </section>
-  
-        <section class="section c-testimonials">
-          <h2 class="section__heading">Opinie klientow</h2>
-  
-  
-          <ul class="l-testimonials-list">
-          
-            <li class="l-testimonials-list__item"></li>
-                <h2 class="c-testimonials__opinion">Super i tyle w temacie</h2>
-                <p class="c-testimonials__client-name">Anna Kowalska</p>
-            </li>
-
-            <li class="l-testimonials-list__item"></li>
-                <h2 class="c-testimonials__opinion">Super i tyle w temacie</h2>
-                <p class="c-testimonials__client-name">Anna Kowalska</p>
-            </li>
-
-            <li class="l-testimonials-list__item"></li>
-                <h2 class="c-testimonials__opinion">Super i tyle w temacie</h2>
-                <p class="c-testimonials__client-name">Anna Kowalska</p>
-            </li>
-
-            <li class="l-testimonials-list__item"></li>
-                <h2 class="c-testimonials__opinion">Super i tyle w temacie</h2>
-                <p class="c-testimonials__client-name">Anna Kowalska</p>
-            </li>
-
-        </ul>
-        </section>
 
         <section class="c-gallery-preview">
             <ul class="l-thumnails-wrapper">
@@ -185,25 +156,26 @@
         </section>
 
         <section class="section c-contact">
-          <h2 class="sectio__heading">Kontakt</h2>
-          <ul class="l-contact-list">
-            <li class="l-contact-list__item">
-              <span class="c-contact__icon"></span>
-              <p class="c-contact__details">Dane kontaktowe</p>
-            </li>
-            <li class="l-contact-list__item">
-              <span class="c-contact__icon"></span>
-              <p class="c-contact__details">Dane kontaktowe</p>
-            </li>
-            <li class="l-contact-list__item">
-              <span class="c-contact__icon"></span>
-              <p class="c-contact__details">Dane kontaktowe</p>
-            </li>
-            <li class="l-contact-list__item">
-              <span class="c-contact__icon"></span>
-              <p class="c-contact__details">Dane kontaktowe</p>
-            </li>
-          </ul>
+            <div class="c-section-heading">
+              <h2 class="c-section-heading__text">Kontakt</h2>
+            </div>
+            
+          <dl class="l-contact-list">
+
+            <div class="l-contact-list__item">
+              <dt><img class="c-contact__icon" src="./img/home.svg"/></dt>
+              <dd class="c-contact__details">Listopadowa 5, Kraków</dd>
+            </div>
+           <div class="l-contact-list__item">
+              <dt><img class="c-contact__icon" src="./img/phone.svg"/></dt>
+              <dd class="c-contact__details">698 874 419</dd>
+           </div>
+           <div class="l-contact-list__item">
+              <dt><img class="c-contact__icon" src="./img/mail.svg"/></dt>
+              <dd class="c-contact__details">carmaster@carmaster.com</dd>
+            </div>
+            
+          </dl>
         </section>
   </main>
   <footer class="page-footer">

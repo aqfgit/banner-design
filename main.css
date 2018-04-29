@@ -20,6 +20,11 @@ html, body {
   font-size: 2rem;
 }
 
+.c-top-bar__logo-link {
+  text-decoration: none;
+  color: #000000;
+}
+
 .l-horizontal-list {
   list-style: none;
   padding: 0;
@@ -102,8 +107,10 @@ html, body {
   justify-content: space-around;
 
   list-style: none;
-  margin: 0 150px;
+  margin: 0 auto;
   padding: 0;
+
+  width: 1200px;
 }
 
 .l-thumnails-wrapper__item {
@@ -117,8 +124,10 @@ html, body {
 }
 
 .c-offers__image {
-  width: 470px;
-  height: 380px;
+  /* width: 470px;
+  height: 380px; */
+  width: 340px;
+  height: 280px;
 }
 
 .c-offers__item::before {
@@ -175,15 +184,35 @@ html, body {
   cursor: pointer;
 }
 
-.c-offers__heading {
+.c-section-heading__text {
   font-size: 2rem;
   text-align: center;
 }
 
-.l-heading-box {
+.c-section-heading {
   border-bottom: 1px solid #a39898;
   display: block;
   padding: 0 160px;
   margin: 40px auto;
   width: 300px;
+}
+
+.c-contact {
+  background-color: #f4f4f4;
+  padding: 1px 0 40px 0;
+}
+
+.l-contact-list {
+  display: flex;
+  justify-content: center;
+}
+
+.l-contact-list__item {
+  display: flex;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.c-contact__details {
+  font-size: 1.2rem;
 }
