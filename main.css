@@ -10,7 +10,7 @@ html, body {
   align-content: center;
   background-color: #ffffff;
   padding: 20px;
-  box-shadow: 10px 1px 1px rgb(194, 191, 191);
+  box-shadow: 10px 1px 1px #c2bfbf, 191, 191);
 }
 
 .c-top-bar__logo {
@@ -46,7 +46,7 @@ html, body {
 .l-horizontal-list__link:hover {
   text-decoration: none;
   font-size: 1.2em;
-  color: rgb(153, 139, 139);
+  color: #998b8b;
 }
 
 .c-top-bar__site-nav {
@@ -179,8 +179,8 @@ html, body {
 }
 
 .c-offers__button:hover {
-  border: 2px solid rgb(91, 195, 255);
-  color: rgb(91, 195, 255);
+  border: 2px solid #058fdf;
+  color: #058fdf;
   cursor: pointer;
 }
 
@@ -275,8 +275,8 @@ html, body {
 
 .c-contact-us-bar__button--blue {
   color: #ffffff;
-  background-color: rgb(91, 195, 255);
-  border: 2px solid rgb(91, 195, 255);
+  background-color: #058fdf;
+  border: 2px solid #058fdf;
   margin: 0;
 }
 
@@ -315,3 +315,15 @@ html, body {
   width: 100%;
 }
 
+.c-about-us {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 0 40px;
+}
+
+.c-about-us__description {
+  color: #727272;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  text-align: center;
+}
