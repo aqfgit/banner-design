@@ -156,14 +156,14 @@ html, body {
   width: 100%;
 }
 
-.l-button-wrapper {
+.l-offers-button-wrapper {
   position: absolute;
   top: 52%;
   z-index: 2;
   width: 100%;
 }
 
-.c-offers__button {
+.c-offers__button{
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -215,4 +215,67 @@ html, body {
 
 .c-contact__details {
   font-size: 1.2rem;
+}
+
+.c-contact-us-bar {
+  background-color: #2bb836;
+  padding: 40px 0;
+}
+
+.l-working-hours-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.c-contact-us-bar__icon {
+  width: 55px;
+  height: 55px;
+}
+
+.c-contact-us-bar__icon-caption {
+  position: absolute;
+  left: 65px;
+}
+
+.c-contact-us-bar__details {
+  position: absolute;
+  left: 65px;
+  top: 30px;
+}
+
+.l-contact-bar-button-wrapper {
+  margin: 20px auto 0;
+  width: 320px;
+}
+
+.c-contact-us-bar__button{
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  margin: 0 10px 0 0;
+
+  background-color: #ffffff;
+  padding: 10px;
+ 
+  font-weight: 500;
+  border-radius: 5%;
+
+  border: 2px solid #ffffff;
+  color: #000000;
+  font-size: 1.2rem;
+}
+
+.c-contact-us-bar__button:hover {
+  cursor: pointer;
+}
+
+.c-contact-us-bar__button--blue {
+  color: #ffffff;
+  background-color: rgb(91, 195, 255);
+  border: 2px solid rgb(91, 195, 255);
+  margin: 0;
 }
