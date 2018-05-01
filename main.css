@@ -372,21 +372,50 @@ html, body {
 
 @media screen and (max-width: 1025px) {
 
+  .l-flex-container {
+    flex-wrap: wrap;
+  }
+
   .c-top-bar__nav-toggler {
+    order: 1;
     border: 0;
     background: url("./img/hamburger-icon.svg") no-repeat;
     display: block;
     height: 30px;
     width: 30px;
-    margin: 4px 150px 0 0;
+    margin: 7px 150px 0 0;
   }
 
   .c-top-bar__site-nav {
     display: none;
   }
 
+
+  .c-top-bar__site-nav--nav-open {
+    display: block;
+    order: 0;
+    top: 100px;
+    flex-grow: 0;
+    order: 1;
+    flex-basis: 100%;
+
+    margin: 20px 0 0 0;
+    font-size: 1.2rem;
+  }
+
+  .l-horizontal-list--menu {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .l-horizontal-list__item--menu {
+    padding: 8px 0;
+    margin: 0;
+  }
+
+
   .c-top-bar__logo {
-    margin-right: 30px;
+    margin: 0 30px 0 0;
   }
 }
 
@@ -491,7 +520,7 @@ html, body {
   background: transparent;
   border: 2px solid #058fdf;
   color: #058fdf;
-}
+  }
 }
 
 @media screen and (max-width: 752px) {
@@ -505,7 +534,6 @@ html, body {
   .c-offers__description {
     font-size: 1.4rem;
   }
-
 }
 
 
@@ -543,7 +571,30 @@ html, body {
   .c-banner-details {
     font-size: 1.3rem;;
 
+  }
 }
+
+@media screen and (max-width: 763px) {
+  .c-top-bar__socials {
+    display: none;
+  }
+
+  
+  .c-top-bar__socials--open {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .c-top-bar__socials--open {
+    margin-top: 30px;
+  }
+
+  .l-horizontal-list__item:first-child {
+    margin-left: 0;
+  }
+}
+
 
 @media screen and (max-width: 690px) {
   .c-about-us {
@@ -553,7 +604,6 @@ html, body {
   .c-section-heading {
     padding: 0;
   }
-
 }
 
 @media screen and (max-width:679px) {
@@ -563,17 +613,12 @@ html, body {
   }
 
   .c-top-bar__logo {
-    margin: 0 20px 0 5px;
+    margin: 0 20px 0 0;
   }
 
   .c-top-bar__nav-toggler {
     margin: 4px 5px 0 0;
   }
-
-  .c-top-bar__socials {
-    display: none;
-  }
-
 }
 
 @media screen and (max-width: 460px) {
