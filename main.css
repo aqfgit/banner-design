@@ -41,8 +41,9 @@ html, body {
 
 .l-horizontal-list__link {
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.2rem;
   color: #000000;
+  cursor: pointer;
 }
 
 .l-horizontal-list__link:hover {
@@ -52,6 +53,45 @@ html, body {
 
 .c-top-bar__site-nav {
   margin-top: 13px;
+}
+
+.l-horizontal-list__item--has-submenu {
+  position: relative;
+}
+
+.l-submenu {
+  position: absolute;
+  top: -999999px;
+  left: -999999px;
+  z-index: 2;
+}
+
+.l-submenu--open {
+  position: absolute;
+  left: -20px;
+  top: initial;
+  z-index: 1;
+  background: #ffffff;
+  margin: 0;
+  padding: 20px 0 0 20px; 
+  width: 250px;
+
+  list-style: none;
+}
+
+
+.l-submenu__item {
+  padding: 20px 0;
+}
+
+.l-submenu__link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2rem;
+}
+
+.l-submenu__link:hover {
+  color: #998b8b;
 }
 
 .c-top-bar__nav-toggler-label {
@@ -401,6 +441,19 @@ html, body {
 
     margin: 20px 0 0 0;
     font-size: 1.2rem;
+  }
+
+  .l-submenu--open {
+    position: relative;
+    left: 50px;
+    top: initial;
+    z-index: 1;
+    background: #ffffff;
+    margin: 0;
+    padding: 20px 0 0 20px; 
+    width: 250px;
+
+    ist-style: none;
   }
 
   .l-horizontal-list--menu {
