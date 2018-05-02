@@ -1,23 +1,21 @@
 ( function() {
-  var button = document.querySelector( '.c-top-bar__nav-toggler' );
-  var socials = document.querySelector('.c-top-bar__socials')
-  var siteNav = document.querySelector('.c-top-bar__site-nav');
-  var offersSubmenuLabel = document.querySelector('.l-submenu__label');
-  var subMenu = document.querySelector('.l-submenu');
+  const button = document.querySelector( '.c-top-bar__nav-toggler' );
+  const socials = document.querySelector('.c-top-bar__socials')
+  const siteNav = document.querySelector('.c-top-bar__site-nav');
+  const offersSubmenuLabel = document.querySelector('.l-submenu__label');
+  const subMenu = document.querySelector('.l-submenu');
 
-  let lastSubmenuEvent;
-
-  let hoverAddClass = function() {
+  const hoverAddClass = function() {
     subMenu.classList.add('l-submenu--open');
     offersSubmenuLabel.setAttribute( 'aria-expanded', String( subMenu.classList.contains( 'l-submenu--open' ) ) );
   }
 
-  let hoverRemoveClass = function() {
+  const hoverRemoveClass = function() {
     subMenu.classList.remove('l-submenu--open');
     offersSubmenuLabel.setAttribute( 'aria-expanded', String( subMenu.classList.contains( 'l-submenu--open' ) ) );
   }
 
-  let clickToggleClass = function() {
+  const clickToggleClass = function() {
       subMenu.classList.toggle('l-submenu--open');
       offersSubmenuLabel.setAttribute( 'aria-expanded', String( subMenu.classList.contains( 'l-submenu--open' ) ) );
   }
@@ -47,14 +45,14 @@
  
 
 	button.addEventListener( 'click', function( evt ) {
-		var hasBeenRotaded = button.style.transform === 'rotate(90deg)';
+		const hasBeenRotaded = button.style.transform === 'rotate(90deg)';
 		if (hasBeenRotaded) {
 			button.style.transform = 'rotate(180deg)';
 		} else {
 			button.style.transform = 'rotate(90deg)';
 		}
 		
-		var nav = document.querySelector('.c-top-bar__site-nav');
+		const nav = document.querySelector('.c-top-bar__site-nav');
     nav.classList.toggle( 'c-top-bar__site-nav--nav-open' );
     
     socials.classList.toggle('c-top-bar__socials--open');

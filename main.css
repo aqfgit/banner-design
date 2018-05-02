@@ -234,6 +234,7 @@ html, body {
 
   border: 2px solid #ffffff;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .c-offers__button:hover {
@@ -322,6 +323,7 @@ html, body {
   position: absolute;
   left: 65px;
   top: 30px;
+  margin: 0;
 }
 
 .l-contact-bar-button-wrapper {
