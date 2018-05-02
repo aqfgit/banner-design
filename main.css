@@ -283,16 +283,11 @@ html, body {
   font-size: 1.2rem;
 }
 
-.c-contact__icon-label--hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 0;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
+.c-contact__icon-label {
   position: absolute;
-  width: 0;
-  white-space: nowrap;
+  left: -999999px;
+  top: -9999999px;
+ 
 }
 
 .c-contact-us-bar {
@@ -609,7 +604,7 @@ html, body {
 
 @media screen and (max-width: 760px) {
   .c-banner {
-    height: 300px;
+    height: 200px;
     overflow: hidden;
     position: relative;
     justify-content: flex-start;
@@ -635,11 +630,11 @@ html, body {
   }
 
   .c-banner__heading {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .c-banner-details {
-    font-size: 1.3rem;;
+    font-size: 1.1rem;;
 
   }
 }
