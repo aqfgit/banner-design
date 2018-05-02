@@ -9,14 +9,17 @@
 
   let hoverAddClass = function() {
     subMenu.classList.add('l-submenu--open');
+    offersSubmenuLabel.setAttribute( 'aria-expanded', String( subMenu.classList.contains( 'l-submenu--open' ) ) );
   }
 
   let hoverRemoveClass = function() {
     subMenu.classList.remove('l-submenu--open');
+    offersSubmenuLabel.setAttribute( 'aria-expanded', String( subMenu.classList.contains( 'l-submenu--open' ) ) );
   }
 
   let clickToggleClass = function() {
       subMenu.classList.toggle('l-submenu--open');
+      offersSubmenuLabel.setAttribute( 'aria-expanded', String( subMenu.classList.contains( 'l-submenu--open' ) ) );
   }
 
   function setProperEventToOpenSumbenu() {
@@ -30,17 +33,9 @@
     subMenu.removeEventListener('mouseleave', hoverRemoveClass, false);
     
     if (window.innerWidth > 1025) {
-      console.log('hover')
-      offersSubmenuLabel.removeEventListener('click', clickToggleClass, false);
-
       offersSubmenuLabel.addEventListener('mouseenter', hoverAddClass, false);
       subMenu.addEventListener('mouseleave',  hoverRemoveClass, false);
-
     } else if (window.innerWidth <= 1025) {
-      console.log('click')
-      offersSubmenuLabel.removeEventListener('mouseenter', hoverAddClass, false);
-      subMenu.removeEventListener('mouseleave', hoverRemoveClass, false);
-
       offersSubmenuLabel.addEventListener('click', clickToggleClass, false)
     }
     

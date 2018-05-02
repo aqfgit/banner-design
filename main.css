@@ -282,6 +282,18 @@ html, body {
   font-size: 1.2rem;
 }
 
+.c-contact__icon-label--hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 0;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+  white-space: nowrap;
+}
+
 .c-contact-us-bar {
   background-color: #2bb836;
   padding: 40px 0;
@@ -449,11 +461,15 @@ html, body {
     top: initial;
     z-index: 1;
     background: #ffffff;
-    margin: 0;
-    padding: 20px 0 0 20px; 
+    margin-left: -20px;
+    padding: 0; 
     width: 250px;
 
     list-style: none;
+  }
+
+  .l-submenu__item {
+    padding: 15px;
   }
 
   .l-horizontal-list--menu {
@@ -581,7 +597,6 @@ html, body {
     padding: 20px;
     margin-right: 0;
     width: 50%;
-    min-height: 115px;
   }
 
   .c-offers__description {
@@ -671,6 +686,12 @@ html, body {
 
   .c-top-bar__nav-toggler {
     margin: 4px 5px 0 0;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .l-thumbnails-wrapper__item {
+    min-height: 115px;
   }
 }
 
