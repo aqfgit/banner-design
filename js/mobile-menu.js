@@ -26,7 +26,7 @@
       subMenu.classList.remove('l-submenu--open')
     }
 
-    offersSubmenuLabel.removeEventListener('click', clickToggleClass, false);
+    offersSubmenuLabel.removeEventListener('touchstart', clickToggleClass, false);
     offersSubmenuLabel.removeEventListener('mouseenter', hoverAddClass, false);
     subMenu.removeEventListener('mouseleave', hoverRemoveClass, false);
     
@@ -34,7 +34,7 @@
       offersSubmenuLabel.addEventListener('mouseenter', hoverAddClass, false);
       subMenu.addEventListener('mouseleave',  hoverRemoveClass, false);
     } else if (window.innerWidth <= 1025) {
-      offersSubmenuLabel.addEventListener('click', clickToggleClass, false)
+      offersSubmenuLabel.addEventListener('touchstart', clickToggleClass, false)
     }
     
   }
