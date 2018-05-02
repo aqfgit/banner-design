@@ -453,7 +453,7 @@ html, body {
     padding: 20px 0 0 20px; 
     width: 250px;
 
-    ist-style: none;
+    list-style: none;
   }
 
   .l-horizontal-list--menu {
@@ -649,7 +649,7 @@ html, body {
 }
 
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 1122px) {
   .c-about-us {
     width: 80%;
   }

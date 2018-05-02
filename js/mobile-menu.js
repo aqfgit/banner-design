@@ -7,19 +7,19 @@
 
   let lastSubmenuEvent;
 
+  let hoverAddClass = function() {
+    subMenu.classList.add('l-submenu--open');
+  }
+
+  let hoverRemoveClass = function() {
+    subMenu.classList.remove('l-submenu--open');
+  }
+
+  let clickToggleClass = function() {
+      subMenu.classList.toggle('l-submenu--open');
+  }
+
   function setProperEventToOpenSumbenu() {
-
-    let hoverAddClass = function() {
-      subMenu.classList.add('l-submenu--open');
-    }
-
-    let hoverRemoveClass = function() {
-      subMenu.classList.remove('l-submenu--open');
-    }
-
-    let clickToggleClass = function() {
-        subMenu.classList.toggle('l-submenu--open');
-    }
 
     if (subMenu.classList.contains('l-submenu--open')) {
       subMenu.classList.remove('l-submenu--open')
@@ -27,19 +27,19 @@
 
     offersSubmenuLabel.removeEventListener('click', clickToggleClass, false);
     offersSubmenuLabel.removeEventListener('mouseenter', hoverAddClass, false);
-    offersSubmenuLabel.removeEventListener('mouseleave', hoverRemoveClass, false);
+    subMenu.removeEventListener('mouseleave', hoverRemoveClass, false);
     
     if (window.innerWidth > 1025) {
       console.log('hover')
       offersSubmenuLabel.removeEventListener('click', clickToggleClass, false);
 
       offersSubmenuLabel.addEventListener('mouseenter', hoverAddClass, false);
-      offersSubmenuLabel.addEventListener('mouseleave',  hoverRemoveClass, false);
+      subMenu.addEventListener('mouseleave',  hoverRemoveClass, false);
 
     } else if (window.innerWidth <= 1025) {
       console.log('click')
       offersSubmenuLabel.removeEventListener('mouseenter', hoverAddClass, false);
-      offersSubmenuLabel.removeEventListener('mouseleave', hoverRemoveClass, false);
+      subMenu.removeEventListener('mouseleave', hoverRemoveClass, false);
 
       offersSubmenuLabel.addEventListener('click', clickToggleClass, false)
     }
