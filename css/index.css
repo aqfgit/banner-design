@@ -7,6 +7,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+  background-position-y: center;
   
   margin: 79px 0 0 0;
   padding: 0;
@@ -165,7 +166,7 @@
 }
 
 .c-contact-us-bar {
-  background-color: #2bb836;
+  background-color: #058fdf;
   padding: 40px 0;
 }
 
@@ -209,12 +210,14 @@
   background-color: #ffffff;
   padding: 10px;
  
-  font-weight: 500;
+ 
   border-radius: 5%;
 
   border: 2px solid #ffffff;
   color: #000000;
+  background: hsl(192, 17%, 99%);
   font-size: 1.2rem;
+  
 }
 
 .c-contact-us-bar__button:hover {
@@ -223,8 +226,8 @@
 
 .c-contact-us-bar__button--blue {
   color: #ffffff;
-  background-color: #058fdf;
-  border: 2px solid #058fdf;
+  background-color: #19d829;
+  border: 2px solid #19d829;
   margin: 0;
 }
 
