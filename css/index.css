@@ -1,135 +1,9 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
-}
-
-.c-top-bar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-  background-color: #ffffff;
-  padding: 20px;
-  box-shadow: 10px 1px 1px #c2bfbf;
-}
-
-.c-top-bar__logo {
-  font-family: 'Chivo', sans-serif;
-  order: 0;
-  margin: 0 70px 0 50px;
-  font-size: 2rem;
-}
-
-.c-top-bar__logo-link {
-  text-decoration: none;
-  color: #000000;
-}
-
-.l-horizontal-list {
-  list-style: none;
-  padding: 0;
-  margin: -3px 0 0 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-.l-horizontal-list__item {
-  margin: 0 20px;
-}
-
-.l-horizontal-list__link {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #000000;
-  cursor: pointer;
-}
-
-.l-horizontal-list__link:hover {
-  text-decoration: none;
-  color: #998b8b;
-}
-
-.c-top-bar__site-nav {
-  margin-top: 13px;
-}
-
-.l-horizontal-list__item--has-submenu {
-  position: relative;
-}
-
-.l-submenu {
-  position: absolute;
-  top: -999999px;
-  left: -999999px;
-  z-index: 2;
-}
-
-.l-submenu--open {
-  position: absolute;
-  left: -20px;
-  top: initial;
-  z-index: 1;
-  background: #ffffff;
-  margin: 0;
-  padding: 20px 0 0 20px; 
-  width: 250px;
-
-  list-style: none;
-}
-
-
-.l-submenu__item {
-  padding: 20px 0;
-}
-
-.l-submenu__link {
-  text-decoration: none;
-  color: #000000;
-  font-size: 1.2rem;
-}
-
-.l-submenu__link:hover {
-  color: #998b8b;
-}
-
-.c-top-bar__nav-toggler-label {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 0;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-  white-space: nowrap;
-}
-
-.c-top-bar__nav-toggler {
-  display: none;
-}
-
-.c-top-bar__socials {
-  order: 2;
-  margin-top: 10px;
-}
-
-.c-top-bar__social-icon {
-  width: 25px;
-  height: 25px;
-}
-
-.l-flex-container {
-  display: flex;
-}
-
 .c-banner__heading {
   margin: 0;
 }
 
 .c-banner {
-  background-image: url("./img/banner.jpg");
+  background-image: url("../img/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -354,19 +228,6 @@ html, body {
   margin: 0;
 }
 
-.c-page-footer {
-  padding: 40px 0;
-
-  display: flex;
-  justify-content: center;
-}
-
-.c-page-footer__description {
-  font-size: 1.2rem;
-  margin: 0;
-  text-align: center;
-}
-
 .c-gallery-preview {
   width: 100%;
   overflow: hidden;
@@ -416,72 +277,6 @@ html, body {
 
   .l-thumbnails-wrapper__item {
     margin: 0 0 45px 0;
-  }
-}
-
-@media screen and (max-width: 1025px) {
-
-  .l-flex-container {
-    flex-wrap: wrap;
-  }
-
-  .c-top-bar__nav-toggler {
-    order: 1;
-    border: 0;
-    background: url("./img/hamburger-icon.svg") no-repeat;
-    display: block;
-    height: 30px;
-    width: 30px;
-    margin: 7px 150px 0 0;
-  }
-
-  .c-top-bar__site-nav {
-    display: none;
-  }
-
-
-  .c-top-bar__site-nav--nav-open {
-    display: block;
-    order: 0;
-    top: 100px;
-    flex-grow: 0;
-    order: 1;
-    flex-basis: 100%;
-
-    margin: 20px 0 0 0;
-    font-size: 1.2rem;
-  }
-
-  .l-submenu--open {
-    position: relative;
-    left: 50px;
-    top: initial;
-    z-index: 1;
-    background: #ffffff;
-    margin-left: -20px;
-    padding: 0; 
-    width: 250px;
-
-    list-style: none;
-  }
-
-  .l-submenu__item {
-    padding: 15px;
-  }
-
-  .l-horizontal-list--menu {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .l-horizontal-list__item--menu {
-    padding: 8px 0;
-    margin: 0;
-  }
-
-
-  .c-top-bar__logo {
-    margin: 0 30px 0 0;
   }
 }
 
@@ -639,28 +434,6 @@ html, body {
   }
 }
 
-@media screen and (max-width: 763px) {
-  .c-top-bar__socials {
-    display: none;
-  }
-
-  
-  .c-top-bar__socials--open {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-  }
-
-  .c-top-bar__socials--open {
-    margin-top: 30px;
-  }
-
-  .l-horizontal-list__item:first-child {
-    margin-left: 0;
-  }
-}
-
-
 @media screen and (max-width: 1122px) {
   .c-about-us {
     width: 80%;
@@ -668,21 +441,6 @@ html, body {
 
   .c-section-heading {
     padding: 0;
-  }
-}
-
-@media screen and (max-width:679px) {
-  .l-flex-container {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .c-top-bar__logo {
-    margin: 0 20px 0 0;
-  }
-
-  .c-top-bar__nav-toggler {
-    margin: 4px 5px 0 0;
   }
 }
 

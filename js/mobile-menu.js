@@ -5,6 +5,8 @@
   const offersSubmenuLabel = document.querySelector('.l-submenu__label');
   const subMenu = document.querySelector('.l-submenu');
 
+  const mobileBreakpoint = 1025;
+
   const hoverAddClass = function() {
     subMenu.classList.add('l-submenu--open');
     offersSubmenuLabel.setAttribute( 'aria-expanded', String( subMenu.classList.contains( 'l-submenu--open' ) ) );
@@ -15,7 +17,7 @@
     offersSubmenuLabel.setAttribute( 'aria-expanded', String( subMenu.classList.contains( 'l-submenu--open' ) ) );
   }
 
-  const clickToggleClass = function() {
+  const clickOrTapToggleClass = function() {
       subMenu.classList.toggle('l-submenu--open');
       offersSubmenuLabel.setAttribute( 'aria-expanded', String( subMenu.classList.contains( 'l-submenu--open' ) ) );
   }
@@ -26,15 +28,17 @@
       subMenu.classList.remove('l-submenu--open')
     }
 
-    offersSubmenuLabel.removeEventListener('touchstart', clickToggleClass, false);
+    offersSubmenuLabel.removeEventListener('touchstart', clickOrTapToggleClass, false);
+    offersSubmenuLabel.removeEventListener('click', clickOrTapToggleClass, false);
     offersSubmenuLabel.removeEventListener('mouseenter', hoverAddClass, false);
     subMenu.removeEventListener('mouseleave', hoverRemoveClass, false);
     
-    if (window.innerWidth > 1025) {
+    if (window.innerWidth > mobileBreakpoint) {
       offersSubmenuLabel.addEventListener('mouseenter', hoverAddClass, false);
       subMenu.addEventListener('mouseleave',  hoverRemoveClass, false);
-    } else if (window.innerWidth <= 1025) {
-      offersSubmenuLabel.addEventListener('touchstart', clickToggleClass, false)
+    } else if (window.innerWidth <= mobileBreakpoint) {
+      offersSubmenuLabel.addEventListener('click', clickOrTapToggleClass, false);
+      offersSubmenuLabel.addEventListener('touchstart', clickOrTapToggleClass, false)
     }
     
   }
