@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-position-x: center;
   
-  margin: 0;
+  margin: 79px 0 0 0;
   padding: 0;
   height: 400px;
   
@@ -17,11 +17,24 @@
   justify-content: center;
 }
 
+.c-banner::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 480px
+}
+
 .c-banner__box {
   text-align: center;
-  background: rgba(51, 50, 50, 0.486);
   color: #ffffff;
   padding: 20px;
+  z-index: 2;
 }
 
 .c-banner__heading {
@@ -66,13 +79,13 @@
   display: block;
   position: absolute;
   content: "";
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.4);
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 1;
-  
+  height: 280px;
 }
 
 .c-offers__description {
@@ -115,19 +128,6 @@
   border: 2px solid #058fdf;
   color: #058fdf;
   cursor: pointer;
-}
-
-.c-section-heading__text {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.c-section-heading {
-  border-bottom: 1px solid #a39898;
-  display: block;
-  padding: 0 160px;
-  margin: 40px auto;
-  width: 250px;
 }
 
 .c-contact {
@@ -406,7 +406,7 @@
     align-items: flex-end;
   }
 
-  .c-banner::before {
+  /* .c-banner::before {
     display: block;
     position: absolute;
     content: "";
@@ -416,7 +416,7 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-  }
+  } */
 
   .c-banner__box {
     background: transparent;
